@@ -1,0 +1,127 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1234,563" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="546,1124" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Login" sap:VirtualizedContainerService.HintSize="484,1013" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="f355e71f-75f9-4f66-83c6-4e3b1f72e379" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,796" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Delay Duration="00:00:03" sap:VirtualizedContainerService.HintSize="388,90" sap2010:WorkflowViewState.IdRef="Delay_1" />
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Entrar'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f355e71f-75f9-4f66-83c6-4e3b1f72e379" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cloud07.legadmi.com:8181/apex/f?p=21106:2:::::SCHID:&amp;tz=-5:00" CvElementArea="567, 617, 370, 44" CvTextArea="732, 632, 43, 13" CvTextArgument="Entrar" CvType="Button" DesignTimeRectangle="570, 619, 367, 40" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Entrar'" FullSelectorArgument="&lt;webctrl tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='button' class='t-Button t-Button--hot t-Button--large t-Button--stretch' aaname='Entrar' check:innerText='Entrar' /&gt;" Guid="08a6322e-2b1f-41db-b5c1-17f37f25f64d" ImageBase64="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" InformativeScreenshot="28b92d7e54fb427173cf193cc9702f65.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Entrar" CvType="Text" DesignTimeRectangle="733, 629, 40, 19" ElementType="Text" FriendlyName="'Entrar'" FullSelectorArgument="&lt;webctrl class='t-Button-label' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl class='t-Button-label' tag='SPAN' type='' aaname='Entrar' check:innerText='Entrar' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACwAAAAXCAYAAABwOa1vAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIiSURBVFhH1ZS9SgNBEMfvWXwF3yCFICgxImIjiKRIYWFlpREtLO0FG799BTW+gGCpmPhVqCgRjShiEpOs899kNnt7E6IGcTPw5+bmZmd+N7t3QTBzrbpKYtBniUGfJQZ9lhj0WWLQZ4Vuxs/DD6HpKxVMXkTj/yXjEGzm/EO5VqrU1MJh4XvQSXrhqcu64Es5nco4nQIT4PD2oypWa6pK60Z2Hv8G2jgW8MlDuZnARwKCj+lNEAh8PE9SPEXqP1OLmYJ+wddiVY3vEvBQtnnMsB65PH33+NlHz+7FeeiJq1nQChhNxnJ6yjDArB69aTDY7UtFBUs3OuYa6nHNy6dPnYvp96/nI7uJerMHtJO9p6Fex7cl7aO+hpaAbdNAy3cqTcUY0jUUawfMBoi+tbweimt4NrCRV+n9aK9fAVdqNV0IWx9budfPYFgX9JxEjwTFuKaJpRpHInZmdhFxPEd9wM5ZwBoUeT89EvMN4PdyVcU38yqIZ82UdH4iG8pJbNXPcKjmaK5ek3KlCQMSsBDq4CUGaeKhj9c4rYAh+qAiMNS8FbA0YZ2DKdEHhTOK+XEf3hmstYFNr3bArmFbZvee2wIDhLcShnqtgO08NnfCHQHjDMPwn9X/WBcYMM5Wi8DoZeUBEvWxKzDsEgQzvURgiKBD96zGZMy/kQswAF9dH/W4ph2371ETPuryv1jqxQrddIPEoM8Sgz5LDPosMeitrtUXxxN+Hs+IgwUAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Marcar Entrada'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f355e71f-75f9-4f66-83c6-4e3b1f72e379" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://cloud07.legadmi.com:8181/apex/f?p=21106:10:14548610447725::::SCHID:D4721D0C667067A3" CvElementArea="1229, 645, 111, 35" CvTextArea="1240, 656, 89, 12" CvTextArgument="Marcar Entrada" CvType="Button" DesignTimeRectangle="1230, 646, 110, 32" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Marcar Entrada'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='COL_VERDE' tableRow='1' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl id='COL_VERDE' type='button' tag='BUTTON' class='t-Button t-Button--hot ' aaname='Marcar Entrada' check:innerText='Marcar Entrada' /&gt;" Guid="fae09e30-f366-4266-b35b-7475d7f76876" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAkCAYAAABVCm6XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAQESURBVHhe7ZvPaxQxFMf9NwT/CMGrHrQqKKKtgii0+Iu1P7fqKAr63yj2ru3Bg8KC4KHX7mR7qF6kh731sgsLLTEvLy95ycxOt3TX3Q158GVmMknm5X3yMtmFOSOTRWEeyMPDQ3OWbNItZGVBNv5+k/Wf9+TSj7mkKRCwAmZkGiTQXfo+K1/nD+WHP4/l+9+PkiZYwAhYZY0FDRHMZiRQhgrvdheSpkDACpiReSCBdlmjpMkTsEogI1ACGYkSyEiUQEaiBDISJZCRKIGMREMEecGeZ60HssbviWv2fEXcd+XjkrhSKKuPwa9M3NbHmii/fxINCSRAbMi2aSuPcrlJMAHiwb65IWW3szFemACxncuu8cdarzEATJysw4AOELd78OCO3GufHuZoQDLnMnHdOIw2USAVPCofDKIZ40DQqzX5II86OkgArCZu2fKuKgcjkJm4ydqzQJplOGvhNZXTMoT3MNt5GchOkD594D0fpA/kqnxj2lBb0CIEeeecW1nMBJgvqV8TN2w7koOEGU3yQDaLy/18cF2l4YPs5XLvSB1heRV37eDbPTxqwMrprQ6CtaaC87yp4Jr6BB7Kn+yc97Ia+t4Ss36ZMuj7adMt5bwPN1HKM3JF3FFQNtB3FdyuPqK1D1Qd9npA25fbu2F9gMJXJjDKOAAc3gPD+8XlHvofHOYIQDYMJHQQg62couCWZCSfmTZgAEvde5ZftMB0QFVZMSMpoDj4sI/lfhnJDPx6IT5ZMF5w9cRRqwv1aybAq9ZnU9/55mUkmzBuHKZvCxWvvYwMYmXLKzQSkDSAbid3ZZ5zsOQuFLKSz3yox5dmCOZXwXbDAEQd/az0JwP2EQSiMiMJjJkQNtjBBFHt6mKuUB+yJxOXWDtjekKxcaiJuG73Dujzaj5TnGD6OWMEuU4z27wvQ0BuoDgIAhrWQ+AsAATSyyoMYllWYx/VIF2g4H13OpCrapWxk1PV4b4fB5ImpI5PqX/VGgnI5fwyyzY/CKGj0J4GUQTJs8QtXxl79+r+2LvqpCCpHDYr2XEgg3ZuacX7a8FO1NZX8L6Ey7btG677vBrGDbIOmcQGvZizTYwK7lLTvffAaFNSBAmDOCtf2iAYU4HZzD+yMr7ZKOuD+eplMzPo0z6nHOSamGF+Q5kPYDns26xIOiNbs8Fzy33WRu3+P0gQwOQ/I9SgvGv8SUCB9X9OYJne5gf1UG6bD8LNTliG53qrX9oHk/GNK+wTd4s4Jnft+81/ftjdJeubfLL/dAXPLfOZlw8KETREkEnjVAIZiRLISJRARqIEMhIlkJEogYxElSDTJwPTo9JPBtJHPNMlYNT3Ix74ROvtL6ScNPkCVoXP6pJNvyWQUZiU/wAp4FH2yirQVwAAAABJRU5ErkJggg==" InformativeScreenshot="71a782c5e9fbd3aa6988c4a259edb184.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Legadmi Autogestión : www.legadmi.com' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Marcar Entrada" CvType="Text" DesignTimeRectangle="1242, 654, 86, 16" ElementType="Text" FriendlyName="'Marcar Entrada'" FullSelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl tableRow='1' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='t-Button-label' aaname='Marcar Entrada' check:innerText='Marcar Entrada' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFoAAAAUCAYAAAAN+ioeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANSSURBVFhH7Ze9bhNBEIB5DSQeAokWCggggRAECkQRF4BMcBIHOCHxPiDSQ/IArtPGt06RNoW7NLbkwlpmdnZmZ3/8g0IuFLfS6Hyzu7Oz38zOrW98O+3YVq5eWtANSQu6IWlBNyQt6IZEgb4jymr0xnZFD2Ieye8d8zror0vMg0zXvwa/KvPcPbum3K/Fg0bIAzu2vs1re8iwEfLFue+wdjo5uF7YCHlc26n3R9pssAZsSqZ/ERSEfDzDhSf2bLwadhm0mlyZx94gtf8KNMBl/XqQ/R7XCspyuTzo+cRtAoF2zTPRT0GPjUFX5qkYQRHHfZmpRvTOej5m1EenRetQJIALbFBfDDoG9tB+9XN4Lso2Qji5FU6mD9BWYXzXPJF5LAEinQiWCPQwL2db6ncOelbbszk8sXyYV+LceEZPFwAwejQh8NLA+Q9DgO/Hc2BQ//bkdnQq0PaR2Yx10ND2u2EoVdpGCGQ5o3fMC4B2QL7D5qfuSW18AWNU+aN2bo9P0/EITZ9sbJyxGIC0Dxv15+UM7QfYBdADD5EMEAyYxJsvZLSOrGwIYULf+/quAHUbBl2e0bxhci610VuU0aqhX5/MDwEXbd4FFk4n2/UB+jL66ccH36KMVgEN+/C2BTq9RxmdsEJdETQvMJ3UQRdNxpLSybJaZw6O06UHN/vbqNsMAoNnnNVxsMiGgszzFADWU0YzOB8wgZEEEOb1zctsPGZfZe6peb65gKt9QKLsy7eLfN6tN/IEcOssAb3PmeHrdQowOEKLMPB0HAVEOcigo6ykTZZOBdlYDjrUaKy3lwO9C6dUkgfGaN9XgeaEcXwK/hVB9+r7KltjJ1NDOJ8XyUHrLAvHs1K139lTtfJvQbMeP2bVKtDJvFA6qH8vuUnIeID7Ky1LYhvfF5S+VaD7mInKqe1afeRg8x+Hoe5i449WDhoXuWk/i5O+geOH9Xel0x+jkg300Ut0GlRDm7JOGfSe2VB+oy4G1Ett+xPtMnq0maxb9tk1npeDRkHY+poGi0bvdOXijcfXNdK5a1QyjiRco1DoY5jq6Le7ShVtKPG+aUlt0tee9hTeY7/19U6uYso2+yT/lJN1Sz5rvbADUaBbuUppQTckLeiGpAXdiHTsHyVTeUGPO7qgAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'chrome.exe Legadmi'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f355e71f-75f9-4f66-83c6-4e3b1f72e379" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="1033, 163, 70, 33" DesignTimeScaleFactor="1" FriendlyName="'chrome.exe Legadmi'" Guid="319ed5d9-8bdc-418c-b8fd-9090543e4dba" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEYAAAAhCAYAAABk391mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANTSURBVGhD7ZrNaxNBGMbnX9Bjr94FobQgggp6UJCiFQ+pX5VKRXIQFNpC8Qv9C3oQ49FDqRcDVvSiqFAPUioaacQGLNtt7Ca2JjE2SZv08Xk3O9tpyNENmOwDTzM7O5tlfp15593MKnV4CerMMtSlNLqur3SUpc9u3w8t4cGbPzCl1IU04p/KcAo1r6pzJH2WvgsDgfPuW8U7QzDPv5Tx9WcVaizTlGo7W/osfX8xTzgnbQw8WvOwEEyxXMPu21lSW256cTtb+qzGM1grbkENpbHvTsbDQjDyp9lFnWSTgVYIhjYZaIVgaJOBVgiGNhlohWBok4FWCIY2GWi1CIwNFeHSePWHX6ciTKqi+vx3v849jjIbZ1t1nm289kHaZKDVAjDs5P4sYslN5Dbce1I1WKkiuocJK2qxzToWWJtLFZiiE+JoER+lWamMIy2AIzLLooDB8L9+Io2YvcW71LCQKGLkcR4TcxtwWFNy1qH6bLYzwOxxMOVI+yomJ3j9ULPv/bcWmWVRsGAGl9A1yecw3sOaW4M6wBEyKA9tFnrey/DZwuy0tN0GE/mwiRIhzsQzHD0N3xeQRWZZFCgYNbCM/kSVd9jE1D0e74gpdRhO8pdfztkVWPIpI+d4a+KLWGSWRcGCYcAdW+S0WK/g2mVOC/+cBTWcx8w6sLGY53EdTF1VxGO8tgVTSFtklkWBg7mS9EaMHPvntkeMlVj1y7lUCbMyw1ZLHDGccn77YC0yy6KAYwwD63SFMaMhxhy00M9YIqPj9aS01WAK6IlXkPPK6mjbLteE0JfxVhljVUpw6WZNyS5y1WpYlXbZuJmSH80YmF8xAJ9u9r3/1iKzLAoYDC3J2vAqYqmqC6Oueh6jepmzGNPKBSOJ4NmCG3+k3dOHwS/ZIrMsCh6MOMrOssNmnZv5+scNma8bnAlEst+2zGP+E5sMtEIwtMlAKwRDmwy0QjC0yUArBEObDLRCMLTJQCsEQ5sMtJS72TTODPNiuOG295ax4fZyvoxktgo14jS9uJ2tRo0t2lM2IjFji1Z+V32WKCP7u/M29VfyNcQ/V6DOMQtv3NRXx/i8wge5jnwNRN5ykL6TQextw2sgKaeKG0/y6L7beW879N7Pun0XBjsF/AX43w5LKuwFFwAAAABJRU5ErkJggg==" InformativeScreenshot="58d38ff4294d5cd63c73babf6760bef3.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='Legadmi Autogestión : www.legadmi.com - Google Chrome' /&gt;" SearchSteps="Image" TargetType="ImageBased" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-8, -8, 1936, 1048" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAABaSURBVDhP7ZGxCcAwEMR+oWSbkDk8XOazi7uAMYLDTaoI1J2++Zo5ztZ3dSpokHQqaJB0KmiQdCpokHQqaJB0KmiQrPu5epLC1//AVwf8ZYaCVU8ZClY9BaoGBWOu5wgefNYAAAAASUVORK5CYII=" InformativeScreenshot="2af9971c08e45bd471b8dfa732c480ce.jpg" Selector="&lt;html app='chrome.exe' title='Login' /&gt;" Title="Login" Url="https://cloud07.legadmi.com:8181/apex/f?p=21106:2:::::SCHID:&amp;tz=-5:00" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
